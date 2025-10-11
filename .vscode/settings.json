@@ -1,0 +1,51 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit",
+    "source.sortMembers": "explicit"
+  },
+  "workbench.colorTheme": "Default Dark+",
+  "editor.fontSize": 18,
+  "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace'",
+  "editor.lineHeight": 1.6,
+  "editor.fontLigatures": true,
+  "editor.renderLineHighlight": "gutter",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.semanticHighlighting.enabled": true,
+  "breadcrumbs.enabled": true,
+  "workbench.activityBar.location": "top",
+  "workbench.statusBar.visible": false,
+  "editor.stickyScroll.enabled": true,
+  "editor.minimap.enabled": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.guides.bracketPairs": "active",
+  "workbench.editor.labelFormat": "short",
+  "explorer.compactFolders": false,
+  "explorer.fileNesting.enabled": true,
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.expo": true
+  },
+  "explorer.fileNesting.patterns": {
+    "package.json": "eas.*, metro.*, nativewind-env.*,  babel.*, app.json, expo.*, expo-env.*, eslint.*, tsconfig.*, README.*, LICENCE, nodemon.*, package-lock.*, next.*, next-env.*, tailwind.*, postcss.*, .eslint*, prettier*, .gitignore*",
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts"
+  },
+  "files.trimTrailingWhitespace": true,
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "JetBrains Mono NL, monospace",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.explorerKind": "integrated",
+  "window.menuBarVisibility": "compact",
+  "window.commandCenter": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "debug.disassemblyView.showSourceCode": false,
+  "chat.commandCenter.enabled": false,
+  "editor.wordWrap": "off",
+  "workbench.editor.highlightModifiedTabs": true,
+  "postman.mcp.notifications.postmanMCP": false
+}
