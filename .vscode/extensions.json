@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "expo.vscode-expo-tools",
+    "usernamehw.errorlens",
+    "formulahendry.auto-rename-tag",
+    "naumovs.color-highlight",
+    "eamodio.gitlens",
+    "ritwickdey.liveserver",
+    "prisma.prisma",
+    "qwtel.sqlite-viewer",
+    "postman.postman-for-vscode",
+    "bradlc.vscode-tailwindcss",
+    "styled-components.vscode-styled-components",
+    "esbenp.prettier-vscode"
+  ]
+}
