@@ -1,111 +1,62 @@
 {
-  // ===========================
-  // Aparência e Interface
-  // ===========================
-  "workbench.colorTheme": "Default Dark+", // Tema escuro padrão
-  "workbench.activityBar.location": "top", // Barra de atividade no topo
-  "workbench.statusBar.visible": false, // Esconde a barra de status inferior
-  "window.menuBarVisibility": "compact", // Menu compacto no topo
-  "workbench.editor.labelFormat": "short", // Nome curto nas abas
-  "workbench.editor.highlightModifiedTabs": true, // Destaca abas modificadas
-
-  // ===========================
-  // Editor de Código
-  // ===========================
-  "editor.fontSize": 18, // Tamanho da fonte do editor
-  "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace'", // Fonte preferida
-  "editor.lineHeight": 1.6, // Espaçamento entre linhas
-  "editor.fontLigatures": true, // Ativa ligaduras de fonte
-  "editor.renderLineHighlight": "gutter", // Destaca linha atual na gávea
-  "editor.semanticHighlighting.enabled": true, // Realce semântico no código
-  "editor.stickyScroll.enabled": true, // Cabeçalho fixo ao rolar longo
-  "editor.minimap.enabled": false, // Desliga o minimapa do código
-  "editor.cursorSmoothCaretAnimation": "on", // Animação suave no cursor
-  "editor.guides.bracketPairs": "active", // Guia para pares de colchetes
-  "editor.wordWrap": "on", // Quebra linhas automaticamente
-  "editor.formatOnSave": true, // Formata ao salvar
-  "editor.formatOnPaste": true, // Formata ao colar
-  "editor.defaultFormatter": "esbenp.prettier-vscode", // Prettier como formatador
-
-  // Formatação por linguagem
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.activityBar.location": "top",
+  "workbench.statusBar.visible": false,
+  "window.menuBarVisibility": "compact",
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.highlightModifiedTabs": true,
+  "editor.fontSize": 18,
+  "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace'",
+  "editor.lineHeight": 1.6,
+  "editor.fontLigatures": true,
+  "editor.renderLineHighlight": "gutter",
+  "editor.semanticHighlighting.enabled": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.minimap.enabled": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.guides.bracketPairs": "active",
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[c]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools" // Usa o formatador do C
+    "editor.defaultFormatter": "ms-vscode.cpptools"
   },
   "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode" // Formatador do Svelte
+    "editor.defaultFormatter": "svelte.svelte-vscode"
   },
-
-  // Ações automáticas ao salvar
   "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit", // Corrige todos problemas
-    "source.organizeImports": "explicit", // Organiza imports
-    "source.sortMembers": "explicit" // Ordena membros do código
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit",
+    "source.sortMembers": "explicit"
   },
-
-  // ===========================
-  // Navegação e Explorador
-  // ===========================
-  "breadcrumbs.enabled": true, // Mostra o breadcrumb do caminho
-  "explorer.compactFolders": false, // Não compacta pastas no explorador
-  "explorer.fileNesting.enabled": true, // Agrupa arquivos relacionados
+  "breadcrumbs.enabled": true,
+  "explorer.compactFolders": false,
+  "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
-    "app.json": "",
     "package.json": "svelte.*, .npmrc, vite.*, app.json, babel.*, eas.*, metro.*, cesconfig.*, TUTORIAL.*, nativewind-env.*, expo.*, expo-env.*, eslint.*, tsconfig.*, README.*, LICENCE, nodemon.*, package-lock.*, next.*, next-env.*, tailwind.*, postcss.*, .eslint*, prettier*, .gitignore*",
     "*.ts": "${capture}.js",
     "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
     "*.jsx": "${capture}.js",
     "*.tsx": "${capture}.ts"
-  }, // Regras para agrupar arquivos
-
-  // ===========================
-  // Terminal Integrado
-  // ===========================
-  "terminal.integrated.fontSize": 14, // Fonte do terminal
-  "terminal.integrated.fontFamily": "JetBrains Mono NL, monospace", // Fonte terminal
-  "terminal.integrated.defaultProfile.linux": "bash", // Terminal padrão no Linux
-  "terminal.explorerKind": "integrated", // Sempre usar terminal integrado
-
-  // ===========================
-  // Tailwind CSS
-  // ===========================
-  "tailwindCSS.classAttributes": ["style", "class", "className"], // Atributos reconhecidos pelo Tailwind
-  "tailwindCSS.classFunctions": ["tw", "tw.color", "tw.style"], // Funções customizadas p/ classes Tailwind
-
-  // ===========================
-  // Organização e Limpeza de Arquivos
-  // ===========================
-  "files.exclude": {
-    "**/.expo": true // Oculta pasta .expo
   },
-  "files.trimTrailingWhitespace": true, // Remove espaços ao final das linhas
-
-  // ===========================
-  // Integrações e Extensões
-  // ===========================
-  "typescript.updateImportsOnFileMove.enabled": "always", // Atualiza imports ao mover arquivos .ts
-  "javascript.updateImportsOnFileMove.enabled": "always", // Atualiza imports ao mover arquivos .js
-  "gitlens.ai.model": "vscode", // Modelo AI do GitLens
-  "gitlens.ai.vscode.model": "copilot:gpt-4.1", // Copilot GPT-4.1 no GitLens
-
-  // ===========================
-  // Configurações de Extensões e Ferramentas
-  // ===========================
-  "postman.mcp.notifications.postmanMCP": false, // Desativa notificações Postman
-  "chat.commandCenter.enabled": false, // Desativa o Command Center do chat
-  "chat.instructionsFilesLocations": {
-    ".github/instructions": true,
-    "/tmp/postman-collections-post-response.instructions.md": true,
-    "/tmp/postman-collections-pre-request.instructions.md": true,
-    "/tmp/postman-folder-post-response.instructions.md": true,
-    "/tmp/postman-folder-pre-request.instructions.md": true,
-    "/tmp/postman-http-request-post-response.instructions.md": true,
-    "/tmp/postman-http-request-pre-request.instructions.md": true
-  }, // Locais de arquivos de instruções Postman/chat
-  "svelte.enable-ts-plugin": true, // Ativa plugin TS no Svelte
-
-  // ===========================
-  // Debug e Outros
-  // ===========================
-  "debug.disassemblyView.showSourceCode": false, // Não mostra código fonte junto de assembly
-  "errorLens.delay": 1000 // Delay do ErrorLens (ms)
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "JetBrains Mono NL, monospace",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.explorerKind": "integrated",
+  "tailwindCSS.classAttributes": ["style", "class", "className"],
+  "tailwindCSS.classFunctions": ["tw", "tw.color", "tw.style"],
+  "files.exclude": {
+    "**/.expo": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "postman.mcp.notifications.postmanMCP": false,
+  "chat.commandCenter.enabled": false,
+  "svelte.enable-ts-plugin": true,
+  "debug.disassemblyView.showSourceCode": false,
+  "errorLens.delay": 1000
 }
